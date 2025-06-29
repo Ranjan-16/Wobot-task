@@ -1,8 +1,8 @@
-import cloud from '../assets/Cloud.svg'
-import device from '../assets/Edge.svg'
+import cloud from "../assets/Cloud.svg";
+import device from "../assets/Edge.svg";
 
 const HealthIndicator = ({ health }) => {
-   const getBorderColor = (value) => {
+  const getBorderColor = (value) => {
     if (value === "A") return "border-green-500";
     if (value === "NA") return "border-gray-400";
     return "border-orange-500";
@@ -23,8 +23,14 @@ const HealthIndicator = ({ health }) => {
 
   return (
     <div className="flex items-center gap-4">
-      <Ring value={health.cloud} icon={<img src={cloud} className="text-gray-500" />} />
-      <Ring value={health.device} icon={<img src={device} className="text-gray-500" />} />
+      <Ring
+        value={health.cloud}
+        icon={<img src={cloud} className="text-gray-500" />}
+      />
+      <Ring
+        value={health.device}
+        icon={<img src={device} className="text-gray-500" />}
+      />
     </div>
   );
 };
