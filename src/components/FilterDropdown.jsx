@@ -1,8 +1,13 @@
-import locationIcon from '../assets/Location icon.svg'
-import statusIcon from '../assets/rss_feed.svg'
+import locationIcon from "../assets/Location icon.svg";
+import statusIcon from "../assets/rss_feed.svg";
 
-const FilterDropdown = ({ location, setLocation, status, setStatus, uniqueLocations }) => {
-
+const FilterDropdown = ({
+  location,
+  setLocation,
+  status,
+  setStatus,
+  uniqueLocations,
+}) => {
   return (
     <div className="flex flex-wrap gap-4">
       {/* Location Dropdown */}
@@ -33,7 +38,6 @@ const FilterDropdown = ({ location, setLocation, status, setStatus, uniqueLocati
           <option value="">Status</option>
           <option value="active">Active</option>
           <option value="inactive">In Active</option>
-
         </select>
       </div>
     </div>

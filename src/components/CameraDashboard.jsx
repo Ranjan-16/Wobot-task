@@ -17,7 +17,7 @@ const CameraDashboard = () => {
     status,
     setStatus,
     filteredData,
-    uniqueLocations
+    uniqueLocations,
   } = useFilter(searchedData);
 
   const {
@@ -31,7 +31,6 @@ const CameraDashboard = () => {
     start,
     end,
   } = usePagination(filteredData, 10);
-
 
   return (
     <div className="space-y-6">
@@ -56,7 +55,11 @@ const CameraDashboard = () => {
         />
       </div>
 
-      <CameraTable data={paginatedData} onDelete={handleDelete} onUpdate={updateStatus} />
+      <CameraTable
+        data={paginatedData}
+        onDelete={handleDelete}
+        onUpdate={updateStatus}
+      />
 
       <Pagination
         currentPage={currentPage}
