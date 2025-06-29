@@ -1,13 +1,124 @@
-# React + Vite
+# 📸 Camera Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and dynamic Camera Dashboard built using **React** and **Vite**, featuring:
 
-Currently, two official plugins are available:
+- Live camera status
+- Search, filter, pagination
+- Health indicators with icons
+- Fully responsive UI using Tailwind CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Wobot-task
+- ⚡ [Vite](https://vitejs.dev/)
+- ⚛️ React
+- 🎨 Tailwind CSS
+- 📦 Axios / Custom Hooks (if used)
+- 🗂️ Modular Component Structure
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/camera-dashboard.git
+cd camera-dashboard
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+yarn
+```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+The app will start on `http://localhost:5173` by default.
+
+---
+
+## 🔧 Folder Structure
+
+```
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── hooks/
+│   ├── App.jsx
+│   └── main.jsx
+├── tailwind.config.js
+├── vite.config.js
+└── package.json
+```
+
+---
+
+## 🧪 Scripts
+
+- `npm run dev` – start the local dev server
+- `npm run build` – build for production
+- `npm run preview` – locally preview production build
+
+---
+
+## 📁 Environment Setup
+
+If you are fetching live API data:
+
+```env
+VITE_API_BASE_URL=http://your-api-url.com
+```
+
+You can access it using `import.meta.env.VITE_API_BASE_URL`.
+
+---
+
+## 🧹 Prettier & ESLint (optional)
+
+To format code:
+
+```bash
+npm run format
+```
+
+To lint code:
+
+```bash
+npm run lint
+```
+
+---
+
+## 📸 Demo
+
+![Camera Dashboard UI](./public/demo.png)
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! Feel free to open issues or suggest new features.
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🧑‍💻 Author
+
+Made by [Your Name](https://github.com/your-username)
