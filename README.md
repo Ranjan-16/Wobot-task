@@ -1,5 +1,7 @@
 # 📸 Camera Dashboard
 
+ [View it on Vercel](https://wobot-task-ten.vercel.app/)
+
 A responsive and dynamic Camera Dashboard built using **React** and **Vite**, featuring:
 
 - Live camera status
@@ -121,4 +123,5 @@ This project is licensed under the MIT License.
 
 ## 🧑‍💻 Author
 
-Made by [Your Name](https://github.com/your-username)
+Made by [Ashishranjan Prasad](https://github.com/Ranjan-16/Wobot-task)
+
